@@ -155,6 +155,8 @@ echo $OUTPUT->doctype() ?>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
     <meta name="author" content="NURIA" /> 
     <?php echo $OUTPUT->standard_head_html() ?>
+    <meta name="description" content="<?php echo get_string('metadescription','theme_essential')?>"/>
+    <meta name="keywords" content="<?php echo get_string('metakeywords','theme_essential')?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google web fonts -->
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
@@ -176,7 +178,7 @@ echo $OUTPUT->doctype() ?>
 <header role="banner" class="navbar">
     <nav role="navigation" class="navbar-inner">
         <div class="container-fluid">
-            <a class="brand" href="<?php echo $CFG->wwwroot;?>"><?php echo $SITE->shortname; ?></a>
+            <a class="brand" href="<?php echo $CFG->wwwroot;?>"><?php echo get_string('shname', 'theme_essential') ?></a>
             <a class="btn btn-navbar" data-toggle="workaround-collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
