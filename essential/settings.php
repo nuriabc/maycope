@@ -45,7 +45,8 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/logo';
     $title = get_string('logo', 'theme_essential');
     $description = get_string('logodesc', 'theme_essential');
-    $setting = new admin_setting_configstoredfile($name, $title, $description, 'logo');
+    $default = 'pix/maycope.gif':
+    $setting = new admin_setting_configstoredfile($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
     
@@ -53,7 +54,7 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/headerprofilepic';
     $title = get_string('headerprofilepic', 'theme_essential');
     $description = get_string('headerprofilepicdesc', 'theme_essential');
-    $default = true;
+    $default = false;
     $setting = new admin_setting_configcheckbox($name, $title, $description, $default, true, false);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
@@ -115,7 +116,7 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/copyright';
     $title = get_string('copyright', 'theme_essential');
     $description = get_string('copyrightdesc', 'theme_essential');
-    $default = '';
+    $default = 'Maycope';
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $temp->add($setting);
     
@@ -123,7 +124,7 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/footnote';
     $title = get_string('footnote', 'theme_essential');
     $description = get_string('footnotedesc', 'theme_essential');
-    $default = '';
+    $default = 'danés - español, spansk - dansk';
     $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
@@ -156,7 +157,7 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/themecolor';
     $title = get_string('themecolor', 'theme_essential');
     $description = get_string('themecolordesc', 'theme_essential');
-    $default = '#30add1';
+    $default = '#ff7005';
     $previewconfig = null;
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);
     $setting->set_updatedcallback('theme_reset_all_caches');
@@ -166,7 +167,7 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/themehovercolor';
     $title = get_string('themehovercolor', 'theme_essential');
     $description = get_string('themehovercolordesc', 'theme_essential');
-    $default = '#29a1c4';
+    $default = '#4ca4a5';
     $previewconfig = null;
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);
     $setting->set_updatedcallback('theme_reset_all_caches');
@@ -263,8 +264,8 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/slide1';
     $title = get_string('slide1', 'theme_essential');
     $description = get_string('slide1desc', 'theme_essential');
-    $setting = new admin_setting_configtext($name, $title, $description, '');
-    $default = '';
+    $default = 'Slide 1';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
 
@@ -272,7 +273,8 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/slide1image';
     $title = get_string('slide1image', 'theme_essential');
     $description = get_string('slide1imagedesc', 'theme_essential');
-    $setting = new admin_setting_configstoredfile($name, $title, $description, 'slide1image');
+    $default = 'pix/slide.gif';
+    $setting = new admin_setting_configstoredfile($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
 
@@ -280,7 +282,8 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/slide1caption';
     $title = get_string('slide1caption', 'theme_essential');
     $description = get_string('slide1captiondesc', 'theme_essential');
-    $setting = new admin_setting_configtextarea($name, $title, $description, '');
+    $default = 'slide 1'
+    $setting = new admin_setting_configtextarea($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
 
@@ -288,7 +291,8 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/slide1url';
     $title = get_string('slide1url', 'theme_essential');
     $description = get_string('slide1urldesc', 'theme_essential');
-    $setting = new admin_setting_configtext($name, $title, $description, '', PARAM_URL);
+    $default = '#';
+    $setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_URL);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
 
@@ -300,8 +304,8 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/slide2';
     $title = get_string('slide2', 'theme_essential');
     $description = get_string('slide2desc', 'theme_essential');
-    $setting = new admin_setting_configtext($name, $title, $description, '');
-    $default = '';
+    $default = 'Slide 2';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
 
@@ -309,7 +313,8 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/slide2image';
     $title = get_string('slide2image', 'theme_essential');
     $description = get_string('slide2imagedesc', 'theme_essential');
-    $setting = new admin_setting_configstoredfile($name, $title, $description, 'slide2image');
+    $default = 'pix/slide.gif';
+    $setting = new admin_setting_configstoredfile($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
 
@@ -317,7 +322,8 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/slide2caption';
     $title = get_string('slide2caption', 'theme_essential');
     $description = get_string('slide2captiondesc', 'theme_essential');
-    $setting = new admin_setting_configtextarea($name, $title, $description, '');
+    $default = 'slide 2'
+    $setting = new admin_setting_configtextarea($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
 
@@ -325,7 +331,8 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/slide2url';
     $title = get_string('slide2url', 'theme_essential');
     $description = get_string('slide2urldesc', 'theme_essential');
-    $setting = new admin_setting_configtext($name, $title, $description, '', PARAM_URL);
+    $default = '#';
+    $setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_URL);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
 
@@ -337,8 +344,8 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/slide3';
     $title = get_string('slide3', 'theme_essential');
     $description = get_string('slide3desc', 'theme_essential');
-    $setting = new admin_setting_configtext($name, $title, $description, '');
-    $default = '';
+    $default = 'Slide 3';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
 
@@ -346,7 +353,8 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/slide3image';
     $title = get_string('slide3image', 'theme_essential');
     $description = get_string('slide3imagedesc', 'theme_essential');
-    $setting = new admin_setting_configstoredfile($name, $title, $description, 'slide3image');
+    $default = 'pix/slide.gif';
+    $setting = new admin_setting_configstoredfile($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
 
@@ -354,7 +362,8 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/slide3caption';
     $title = get_string('slide3caption', 'theme_essential');
     $description = get_string('slide3captiondesc', 'theme_essential');
-    $setting = new admin_setting_configtextarea($name, $title, $description, '');
+    $default = 'slide 3'
+    $setting = new admin_setting_configtextarea($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
 
@@ -362,7 +371,8 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/slide3url';
     $title = get_string('slide3url', 'theme_essential');
     $description = get_string('slide3urldesc', 'theme_essential');
-    $setting = new admin_setting_configtext($name, $title, $description, '', PARAM_URL);
+    $default = '#';
+    $setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_URL);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
 
@@ -374,8 +384,8 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/slide4';
     $title = get_string('slide4', 'theme_essential');
     $description = get_string('slide4desc', 'theme_essential');
-    $setting = new admin_setting_configtext($name, $title, $description, '');
-    $default = '';
+    $default = 'Slide 4';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
 
@@ -383,7 +393,8 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/slide4image';
     $title = get_string('slide4image', 'theme_essential');
     $description = get_string('slide4imagedesc', 'theme_essential');
-    $setting = new admin_setting_configstoredfile($name, $title, $description, 'slide4image');
+    $default = 'pix/slide.gif';
+    $setting = new admin_setting_configstoredfile($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
 
@@ -391,7 +402,8 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/slide4caption';
     $title = get_string('slide4caption', 'theme_essential');
     $description = get_string('slide4captiondesc', 'theme_essential');
-    $setting = new admin_setting_configtextarea($name, $title, $description, '');
+    $default = 'slide 4'
+    $setting = new admin_setting_configtextarea($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
 
@@ -399,7 +411,8 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/slide4url';
     $title = get_string('slide4url', 'theme_essential');
     $description = get_string('slide4urldesc', 'theme_essential');
-    $setting = new admin_setting_configtext($name, $title, $description, '', PARAM_URL);
+    $default = '#';
+    $setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_URL);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
     
@@ -434,18 +447,10 @@ defined('MOODLE_INTERNAL') || die;
 	$temp->add($setting);
 	
 	//Marketing Spot One.
-	$name = 'theme_essential/marketing1';
-    $title = get_string('marketing1', 'theme_essential');
-    $description = get_string('marketing1desc', 'theme_essential');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
-    
-    $name = 'theme_essential/marketing1icon';
+	 $name = 'theme_essential/marketing1icon';
     $title = get_string('marketing1icon', 'theme_essential');
     $description = get_string('marketing1icondesc', 'theme_essential');
-    $default = 'star';
+    $default = 'desktop';
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
@@ -457,27 +462,14 @@ defined('MOODLE_INTERNAL') || die;
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
             
-    $name = 'theme_essential/marketing1buttonurl';
-    $title = get_string('marketing1buttonurl', 'theme_essential');
-    $description = get_string('marketing1buttonurldesc', 'theme_essential');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, '', PARAM_URL);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
+   );
     
     //Marketing Spot Two.
-	$name = 'theme_essential/marketing2';
-    $title = get_string('marketing2', 'theme_essential');
-    $description = get_string('marketing2desc', 'theme_essential');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
-    
+	  
     $name = 'theme_essential/marketing2icon';
     $title = get_string('marketing2icon', 'theme_essential');
     $description = get_string('marketing2icondesc', 'theme_essential');
-    $default = 'star';
+    $default = 'comments-alt';
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
@@ -489,43 +481,14 @@ defined('MOODLE_INTERNAL') || die;
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
     
-    $name = 'theme_essential/marketing2content';
-    $title = get_string('marketing2content', 'theme_essential');
-    $description = get_string('marketing2contentdesc', 'theme_essential');
-    $default = '';
-    $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
     
-    $name = 'theme_essential/marketing2buttontext';
-    $title = get_string('marketing2buttontext', 'theme_essential');
-    $description = get_string('marketing2buttontextdesc', 'theme_essential');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
-    
-    $name = 'theme_essential/marketing2buttonurl';
-    $title = get_string('marketing2buttonurl', 'theme_essential');
-    $description = get_string('marketing2buttonurldesc', 'theme_essential');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, '', PARAM_URL);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
     
     //Marketing Spot Three.
-	$name = 'theme_essential/marketing3';
-    $title = get_string('marketing3', 'theme_essential');
-    $description = get_string('marketing3desc', 'theme_essential');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
-    
+	 
     $name = 'theme_essential/marketing3icon';
     $title = get_string('marketing3icon', 'theme_essential');
     $description = get_string('marketing3icondesc', 'theme_essential');
-    $default = 'star';
+    $default = 'exchange';
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
@@ -537,29 +500,7 @@ defined('MOODLE_INTERNAL') || die;
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
     
-    $name = 'theme_essential/marketing3content';
-    $title = get_string('marketing3content', 'theme_essential');
-    $description = get_string('marketing3contentdesc', 'theme_essential');
-    $default = '';
-    $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
     
-    $name = 'theme_essential/marketing3buttontext';
-    $title = get_string('marketing3buttontext', 'theme_essential');
-    $description = get_string('marketing3buttontextdesc', 'theme_essential');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
-    
-    $name = 'theme_essential/marketing3buttonurl';
-    $title = get_string('marketing3buttonurl', 'theme_essential');
-    $description = get_string('marketing3buttonurldesc', 'theme_essential');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, '', PARAM_URL);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
     
     
     $ADMIN->add('theme_essential', $temp);
@@ -574,7 +515,7 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/website';
     $title = get_string('website', 'theme_essential');
     $description = get_string('websitedesc', 'theme_essential');
-    $default = '';
+    $default = 'https://www.maycope.com';
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
@@ -583,7 +524,7 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/facebook';
     $title = get_string('facebook', 'theme_essential');
     $description = get_string('facebookdesc', 'theme_essential');
-    $default = '';
+    $default = '#';
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
@@ -592,7 +533,7 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/twitter';
     $title = get_string('twitter', 'theme_essential');
     $description = get_string('twitterdesc', 'theme_essential');
-    $default = '';
+    $default = '#';
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
@@ -601,7 +542,7 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/googleplus';
     $title = get_string('googleplus', 'theme_essential');
     $description = get_string('googleplusdesc', 'theme_essential');
-    $default = '';
+    $default = '#';
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
@@ -610,7 +551,7 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_essential/linkedin';
     $title = get_string('linkedin', 'theme_essential');
     $description = get_string('linkedindesc', 'theme_essential');
-    $default = '';
+    $default = '#';
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
@@ -662,26 +603,4 @@ defined('MOODLE_INTERNAL') || die;
     
     $ADMIN->add('theme_essential', $temp);
     
-    $temp = new admin_settingpage('theme_essential_mobileapps', get_string('mobileappsheading', 'theme_essential'));
-	$temp->add(new admin_setting_heading('theme_essential_mobileapps', get_string('mobileappsheadingsub', 'theme_essential'),
-            format_text(get_string('mobileappsdesc' , 'theme_essential'), FORMAT_MARKDOWN)));
-    // Android App url setting.
-    $name = 'theme_essential/android';
-    $title = get_string('android', 'theme_essential');
-    $description = get_string('androiddesc', 'theme_essential');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
     
-    // iOS App url setting.
-    $name = 'theme_essential/ios';
-    $title = get_string('ios', 'theme_essential');
-    $description = get_string('iosdesc', 'theme_essential');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
-    
-    $ADMIN->add('theme_essential', $temp);
-
