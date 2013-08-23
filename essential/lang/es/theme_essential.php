@@ -134,37 +134,37 @@ $string['marketingdesc'] = 'Este tema ofrece la opción de habilitar tres "spots
 $string['togglemarketing'] = 'Intercambiar Pantalla de Spot Publicitario';
 $string['togglemarketingdesc'] = 'Escoja si desea mostrar o esconder los tres Spots Publicitarios.';
 
-$string['marketing1'] = 'Spot Publicitario Uno: Título';
+$string['marketing1'] = 'Aprende danés online';
 $string['marketing1desc'] = 'Título para mostrar en este spot publicitario';
 $string['marketing1icon'] = 'Spot Publicitario Uno: Ícono';
 $string['marketing1icondesc'] = 'Nombre del ícono que desea usar. La lista de íconos disponibles esta <a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/" target="_new">aquí</a>. Solo coloque lo que esta justo después de "icon-".';
-$string['marketing1content'] = '<p>Maycope es una empresa especializada en la enseñanza del danés y el español.</p>';
+$string['marketing1content'] = '<p>Maycope es una página pensada para tí que necesitas aprender danés. Estructurada en cursos personalizados según tus necesidades, encontrarás desde cursos para viajeros como para estudiantes o trabajadores. Con el apoyo de la clase online y las herramientas que se ponen a tu alcance como programas de memorización, fichas evaluables, vídeos, audios y ejercicios podrás superar la barrera idiomática del danés. Todo de una forma divertida y entretenida. No esperes más, ¡te enamorarás del danés!</p>';
 $string['marketing1contentdesc'] = 'Contenido a mostrar en el spot publicitario. Manténgalo corto y genial.';
 $string['marketing1buttontext'] = 'Leer más';
 $string['marketing1buttontextdesc'] = 'Texto que aparecerá en el botón.';
-$string['marketing1buttonurl'] = 'Spot Publicitario Uno: URL del enlace';
+$string['marketing1buttonurl'] = 'infos/es/courses.html';
 $string['marketing1buttonurldesc'] = 'URL al que apunta el botón.';
 
-$string['marketing2'] = 'Spot Publicitario Dos: Título';
+$string['marketing2'] = 'Comunícate con la gente de tu entorno';
 $string['marketing2desc'] = 'Título para mostrar en este spot publicitario';
 $string['marketing2icon'] = 'Spot Publicitario Dos: Ícono';
 $string['marketing2icondesc'] = 'Nombre del ícono que desea usar. La lista de íconos disponibles esta <a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/" target="_new">aquí</a>. Solo coloque lo que esta justo después de "icon-".';
-$string['marketing2content'] = 'Spot Publicitario Dos: Contenido';
+$string['marketing2content'] = 'Tan fácil como poder hacer la compra, hablar con tu médico o el profesor de tu hijo sin miedo a equivocarte o a no entender lo que te dicen. Es un proceso que implica no sólo entender el idioma sino el sistema económico y administrativo del país, su cultura y sus señas de identidad. En el blog, podrás leer interesantes artículos sobre curiosidades y noticias de actualidad. Encontrarás consejos útiles y podrás preguntar tus dudas. Tu opinión es muy importante para maycope. ¡Te queremos escuchar…en danés!';
 $string['marketing2contentdesc'] = 'Contenido a mostrar en el spot publicitario. Manténgalo corto y genial.';
-$string['marketing2buttontext'] = 'Spot Publicitario Dos: Texto del enlace';
+$string['marketing2buttontext'] = 'Leer más';
 $string['marketing2buttontextdesc'] = 'Texto que aparecerá en el botón.';
-$string['marketing2buttonurl'] = 'Spot Publicitario Dos: URL del enlace';
+$string['marketing2buttonurl'] = 'blog_es';
 $string['marketing2buttonurldesc'] = 'URL al que apunta el botón.';
 
-$string['marketing3'] = 'Spot Publicitario Tres: Título';
+$string['marketing3'] = 'Habla con nuestros expertos';
 $string['marketing3desc'] = 'Título para mostrar en este spot publicitario';
 $string['marketing3icon'] = 'Spot Publicitario Tres: Ícono';
 $string['marketing3icondesc'] = 'Nombre del ícono que desea usar. La lista de íconos disponibles esta <a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/" target="_new">aquí</a>. Solo coloque lo que esta justo después de "icon-".';
-$string['marketing3content'] = 'Spot Publicitario Tres: Contenido';
+$string['marketing3content'] = 'Maycope está formado por una profesional de la enseñanza y la traducción con gran experiencia en el mundo empresarial y educativo. Amante de los cómics y la fotografía, sus clases tendrán un gran contenido visual e interactivo. No dudes en contactarnos si deseas traducir algún documento o editar textos en otros idiomas aparte del danés. En Maycope, traducimos a todas las lenguas del entorno europeo.';
 $string['marketing3contentdesc'] = 'Contenido a mostrar en el spot publicitario. Manténgalo corto y genial.';
-$string['marketing3buttontext'] = 'Spot Publicitario Tres: Texto del enlace';
+$string['marketing3buttontext'] = 'Leer más';
 $string['marketing3buttontextdesc'] = 'Texto que aparecerá en el botón.';
-$string['marketing3buttonurl'] = 'Spot Publicitario Tres: URL del enlace';
+$string['marketing3buttonurl'] = 'infos/es/traducciones.html';
 $string['marketing3buttonurldesc'] = 'URL al que apunta el botón.';
 
 /* Social Networks */
@@ -195,10 +195,10 @@ $string['mobileappsheading'] = 'Apps Móviles';
 $string['mobileappsheadingsub'] = 'Link to your App to get your students using Mobiles';
 $string['mobileappsdesc'] = 'Have you got a web app on the App Store or Google Play Store? Provide a link here so your users can grab the apps online';
 
-$string['android'] = 'Android (Google Play)';
+$string['android'] = 'https://play.google.com/store/apps/details?id=com.moodle.moodlemobile&hl=es';
 $string['androiddesc'] = 'Prove a URL to your mobile App on the Google Play Store. If you do not have one of your own maybe consider linking to the free official Moodle Mobile app.';
 
-$string['ios'] = 'iPhone/iPad (App Store)';
+$string['ios'] = 'https://itunes.apple.com/es/app/moodle-mobile/id633359593?mt=8';
 $string['iosdesc'] = 'Prove a URL to your mobile App on the App Store. If you do not have one of your own maybe consider linking to the free official Moodle Mobile app.';
 
 /* Alerts */
