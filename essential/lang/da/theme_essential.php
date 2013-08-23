@@ -46,6 +46,13 @@ Contact: julian@moodleman.net<br>
 Website: <a href="http://www.moodleman.net">www.moodleman.net</a>
 </p>
 </div></div>';
+$string['metadescription'] = 'Maycope es una empresa especializada en la enseñanza del danés a hispanohablantes y del español a daneses. Maycope ofrece cursos de idiomas online para todos los niveles con clases y herramientas interactivas. A través de su blog Maycope proporciona al estudiante conocimientos muy útiles sobre la vida en España y Dinamarca. Maycope también ofrece servicios de traducción para todas las lenguas europeas.';
+$string['metakeywords'] = 'danés, español, Dinamarca, España, e-learning, cursos de idiomas, traducciones, lenguas europeas, cultura, civilización';
+$string['metadescription_gen'] = 'Maycope es una empresa especializada en la enseñanza del danés a hispanohablantes y del español a daneses. Maycope ofrece en su portal de e-learning cursos de idiomas online para todos los niveles con clases y herramientas interactivas. A través de su blog Maycope proporciona al estudiante conocimientos muy útiles sobre la cultura y la civilización de España y Dinamarca. Maycope también ofrece servicios de traducción para todas las lenguas europeas. (gen)';
+$string['metakeywords_gen'] = 'danés, español, Dinamarca, España, e-learning, cursos de idiomas, traducciones, lenguas europeas, cultura, civilización (gen)';
+$string['metadescription_stand'] = 'Maycope es una empresa especializada en la enseñanza del danés a hispanohablantes y del español a daneses. Maycope ofrece en su portal de e-learning cursos de idiomas online para todos los niveles con clases y herramientas interactivas. A través de su blog Maycope proporciona al estudiante conocimientos muy útiles sobre la cultura y la civilización de España y Dinamarca. Maycope también ofrece servicios de traducción para todas las lenguas europeas. (gen)';
+$string['metakeywords_stand'] = 'danés, español, Dinamarca, España, e-learning, cursos de idiomas, traducciones, lenguas europeas, cultura, civilización (stand)';
+$string['shname'] = 'spansk <-> dansk';
 
 /* General */
 $string['geneicsettings'] = 'General Settings';
@@ -265,7 +272,7 @@ $string['mobileappsdesc'] = 'Have you got a web app on the App Store or Google P
 $string['android'] = 'https://play.google.com/store/apps/details?id=com.moodle.moodlemobile&hl=da';
 $string['androiddesc'] = 'Prove a URL to your mobile App on the Google Play Store. If you do not have one of your own maybe consider linking to the free official Moodle Mobile app.';
 
-$string['ios'] = 'iPhone/iPad (App Store)';
+$string['ios'] = 'https://itunes.apple.com/da/app/moodle-mobile/id633359593?mt=8';
 $string['iosdesc'] = 'Prove a URL to your mobile App on the App Store. If you do not have one of your own maybe consider linking to the free official Moodle Mobile app.';
 
 /* Alerts */
