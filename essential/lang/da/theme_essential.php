@@ -262,7 +262,7 @@ $string['mobileappsheading'] = 'Mobile Apps';
 $string['mobileappsheadingsub'] = 'Link to your App to get your students using Mobiles';
 $string['mobileappsdesc'] = 'Have you got a web app on the App Store or Google Play Store? Provide a link here so your users can grab the apps online';
 
-$string['android'] = 'Android (Google Play)';
+$string['android'] = 'https://play.google.com/store/apps/details?id=com.moodle.moodlemobile&hl=da';
 $string['androiddesc'] = 'Prove a URL to your mobile App on the Google Play Store. If you do not have one of your own maybe consider linking to the free official Moodle Mobile app.';
 
 $string['ios'] = 'iPhone/iPad (App Store)';
