@@ -34,8 +34,8 @@ $hasvk          = (empty($PAGE->theme->settings->vk)) ? false : $PAGE->theme->se
 $haspinterest   = (empty($PAGE->theme->settings->pinterest)) ? false : $PAGE->theme->settings->pinterest;
 $hasinstagram   = (empty($PAGE->theme->settings->instagram)) ? false : $PAGE->theme->settings->instagram;
 $hasskype       = (empty($PAGE->theme->settings->skype)) ? false : $PAGE->theme->settings->skype;
-$hasios         = (empty($PAGE->theme->settings->ios)) ? false : $PAGE->theme->settings->ios;
-$hasandroid     = (empty($PAGE->theme->settings->android)) ? false : $PAGE->theme->settings->android;
+$hasios         = get_string('ios','theme_essential');
+$hasandroid     = get_string('android','theme_essential');
 $haswebsite     = (empty($PAGE->theme->settings->website)) ? false : $PAGE->theme->settings->website;
 
 // If any of the above social networks are true, sets this to true.
