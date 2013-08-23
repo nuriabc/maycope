@@ -153,7 +153,7 @@ echo $OUTPUT->doctype() ?>
 <head>
     <title><?php echo $PAGE->title ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
-    <meta name="author" content="Site by Moodleman" /> 
+    <meta name="author" content="NURIA" /> 
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google web fonts -->
@@ -285,13 +285,13 @@ echo $OUTPUT->doctype() ?>
         <!-- Advert #1 -->
         <div class="service">
             <!-- Icon & title. Font Awesome icon used. -->
-            <h5><span><i class="icon-<?php echo $PAGE->theme->settings->marketing1icon ?>"></i> <?php echo $PAGE->theme->settings->marketing1 ?></span></h5>
+            <h5><span><i class="icon-<?php echo $PAGE->theme->settings->marketing1icon ?>"></i> <?php echo get_string('marketing1','theme_essential') ?></span></h5>
             <?php if ($hasmarketing1image) { ?>
             	<div class="marketing-image1"></div>
             <?php } ?>
             
             <?php echo get_string('marketing1content','theme_essential')?>
-            <p align="right"><a href="<?php echo $PAGE->theme->settings->marketing1buttonurl ?>" id="button"><?php echo get_string('marketing1buttontext','theme_essential') ?></a></p>
+            <p align="right"><a href="<?php echo get_string('marketing1buttonurl','theme_essential') ?>" id="button"><?php echo get_string('marketing1buttontext','theme_essential') ?></a></p>
         </div>
     </div>
     
@@ -299,13 +299,13 @@ echo $OUTPUT->doctype() ?>
         <!-- Advert #2 -->
         <div class="service">
             <!-- Icon & title. Font Awesome icon used. -->
-            <h5><span><i class="icon-<?php echo $PAGE->theme->settings->marketing2icon ?>"></i> <?php echo $PAGE->theme->settings->marketing2 ?></span></h5>
+            <h5><span><i class="icon-<?php echo $PAGE->theme->settings->marketing2icon ?>"></i> <?php echo get_string('marketing2','theme_essential') ?></span></h5>
             <?php if ($hasmarketing2image) { ?>
             	<div class="marketing-image2"></div>
             <?php } ?>
             
-            <?php echo $PAGE->theme->settings->marketing2content ?>
-            <p align="right"><a href="<?php echo $PAGE->theme->settings->marketing2buttonurl ?>" id="button"><?php echo $PAGE->theme->settings->marketing2buttontext ?></a></p>
+            <?php echo get_string('marketing2content','theme_essential') ?>
+            <p align="right"><a href="<?php echo get_string('marketing2buttonurl','theme_essential') ?>" id="button"><?php echo get_string('marketing2buttontext','theme_essential') ?></a></p>
         </div>
     </div>
     
@@ -313,13 +313,13 @@ echo $OUTPUT->doctype() ?>
         <!-- Advert #3 -->
         <div class="service">
             <!-- Icon & title. Font Awesome icon used. -->
-            <h5><span><i class="icon-<?php echo $PAGE->theme->settings->marketing3icon ?>"></i> <?php echo $PAGE->theme->settings->marketing3 ?></span></h5>
+            <h5><span><i class="icon-<?php echo $PAGE->theme->settings->marketing3icon ?>"></i> <?php echo get_string('marketing3','theme_essential') ?></span></h5>
             <?php if ($hasmarketing3image) { ?>
             	<div class="marketing-image3"></div>
             <?php } ?>
             
-            <?php echo $PAGE->theme->settings->marketing3content ?>
-            <p align="right"><a href="<?php echo $PAGE->theme->settings->marketing3buttonurl ?>" id="button"><?php echo $PAGE->theme->settings->marketing3buttontext ?></a></p>
+            <?php echo get_string('marketing3content','theme_essential') ?>
+            <p align="right"><a href="<?php echo get_string('marketing3buttonurl','theme_essential') ?>" id="button"><?php echo get_string('marketing3buttontext','theme_essential') ?></a></p>
         </div>
     </div>
 </div>
