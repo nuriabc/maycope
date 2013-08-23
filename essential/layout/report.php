@@ -101,6 +101,8 @@ echo $OUTPUT->doctype() ?>
     <title><?php echo $PAGE->title ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
     <?php echo $OUTPUT->standard_head_html() ?>
+    <meta name="description" content="<?php echo get_string('metadescription_stand','theme_essential')?>"/>
+    <meta name="keywords" content="<?php echo get_string('metakeywords_stand','theme_essential')?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google web fonts -->
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
