@@ -46,6 +46,13 @@ Contacto: julian@moodleman.net<br>
 Sitio web: <a href="http://www.moodleman.net">www.moodleman.net</a>
 </p>
 </div></div>';
+$string['metadescription'] = 'Maycope es una empresa especializada en la enseñanza del danés a hispanohablantes y del español a daneses. Maycope ofrece en su portal de e-learning cursos de idiomas online para todos los niveles con clases y herramientas interactivas. A través de su blog Maycope proporciona al estudiante conocimientos muy útiles sobre la cultura y la civilización de España y Dinamarca. Maycope también ofrece servicios de traducción para todas las lenguas europeas.';
+$string['metakeywords'] = 'danés, español, Dinamarca, España, e-learning, cursos de idiomas, traducciones, lenguas europeas, cultura, civilización';
+$string['metadescription_gen'] = 'Maycope es una empresa especializada en la enseñanza del danés a hispanohablantes y del español a daneses. Maycope ofrece en su portal de e-learning cursos de idiomas online para todos los niveles con clases y herramientas interactivas. A través de su blog Maycope proporciona al estudiante conocimientos muy útiles sobre la cultura y la civilización de España y Dinamarca. Maycope también ofrece servicios de traducción para todas las lenguas europeas. (gen)';
+$string['metakeywords_gen'] = 'danés, español, Dinamarca, España, e-learning, cursos de idiomas, traducciones, lenguas europeas, cultura, civilización (gen)';
+$string['metadescription_stand'] = 'Maycope es una empresa especializada en la enseñanza del danés a hispanohablantes y del español a daneses. Maycope ofrece en su portal de e-learning cursos de idiomas online para todos los niveles con clases y herramientas interactivas. A través de su blog Maycope proporciona al estudiante conocimientos muy útiles sobre la cultura y la civilización de España y Dinamarca. Maycope también ofrece servicios de traducción para todas las lenguas europeas. (gen)';
+$string['metakeywords_stand'] = 'danés, español, Dinamarca, España, e-learning, cursos de idiomas, traducciones, lenguas europeas, cultura, civilización (stand)';
+$string['shname'] = 'danés <-> español';
 
 /* General */
 $string['customcss'] = 'CSS personalizado';
